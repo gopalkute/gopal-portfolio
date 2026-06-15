@@ -1,0 +1,64 @@
+.wakeup-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-family: var(--ff-poppins);
+  z-index: 9999;
+  max-width: 420px;
+  width: calc(100% - 32px);
+  box-shadow: 0 8px 32px hsla(0,0%,0%,0.4);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(16px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.wakeup-sleeping {
+  background: hsl(240, 5%, 16%);
+  border: 1px solid hsl(240, 3%, 28%);
+  color: hsl(0,0%,84%);
+}
+.wakeup-awake {
+  background: hsla(120, 55%, 30%, 0.9);
+  border: 1px solid hsla(120, 55%, 45%, 0.5);
+  color: #86efac;
+}
+.wakeup-error {
+  background: hsla(0, 60%, 25%, 0.9);
+  border: 1px solid hsla(0, 60%, 45%, 0.5);
+  color: #fca5a5;
+}
+
+.wakeup-sleeping ion-icon,
+.wakeup-awake ion-icon,
+.wakeup-error ion-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.wakeup-awake ion-icon  { color: #4ade80; }
+.wakeup-error ion-icon  { color: #f87171; }
+
+.wakeup-spinner {
+  width: 20px; height: 20px;
+  border: 2px solid hsl(240, 3%, 35%);
+  border-top-color: hsl(45, 100%, 65%);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.wakeup-text {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.wakeup-text strong { color: hsl(0,0%,95%); font-weight: 600; }
+.wakeup-text span   { color: hsl(0,0%,65%); font-size: 11px; }
