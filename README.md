@@ -303,25 +303,23 @@ Authorization: Bearer <your_jwt_token>
 
 ## 🖼️ Screenshots
 
-> Screenshots will be added after deployment.
-
 | Portfolio — About | Portfolio — Resume |
 | ----------------- | ------------------ |
-| _(coming soon)_   | _(coming soon)_    |
+|  ![about page](images/portfolio-home.png)  | ![resume page](images/portfolio-resume.png)    |
 
 | Portfolio — Projects | Portfolio — Contact |
 | -------------------- | ------------------- |
-| _(coming soon)_      | _(coming soon)_     |
+| ![projects page](images/portfolio-projects.png)      | ![contact page](images/portfolio-contact.png)     |
 
 | Admin — Dashboard Overview | Admin — Projects Editor |
 | -------------------------- | ----------------------- |
-| _(coming soon)_            | _(coming soon)_         |
+| ![admin dashboard page](images/admin-dashboard.png)    | ![projects edit page](images/admin-projects-edit.png) |
 
 ---
 
 ## 🌐 Live Demo
 
-> 🔗 **[Live Demo](#)** — _(add your deployed URL here)_
+> 🔗 **[CLICK ME - Live Portfolio](https://gopalkute.vercel.app)**
 
 ---
 
